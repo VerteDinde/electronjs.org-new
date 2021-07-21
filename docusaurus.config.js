@@ -12,6 +12,19 @@ module.exports = {
   favicon: 'assets/img/favicon.ico',
   organizationName: 'electron',
   projectName: 'electron',
+  i18n: {
+    defaultLocale: 'en',
+    locales: [
+      'de-de',
+      'en',
+      'es-es',
+      'fr-fr',
+      'ja-jp',
+      'pt-br',
+      'ru-ru',
+      'zh-cn',
+    ],
+  },
   themeConfig: {
     announcementBar: {
       id: 'to_old_docs',
@@ -46,6 +59,10 @@ module.exports = {
           activeBaseRegex: '^\b$', // never active
         },
         { to: 'blog', label: 'Blog', position: 'left' },
+        {
+          type: 'localeDropdown',
+          position: 'right',
+        },
         {
           href: 'https://github.com/electron/electron',
           label: 'GitHub',
